@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blog</title>
+    <link>http://bcoughlan.github.io/</link>
+    <description>Recent content on blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 22 Feb 2020 01:51:37 +0000</lastBuildDate>
+    
+	<atom:link href="http://bcoughlan.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes workers are not immune to master failures</title>
+      <link>http://bcoughlan.github.io/posts/kubernetes-master-fail/</link>
+      <pubDate>Sat, 22 Feb 2020 01:51:37 +0000</pubDate>
+      
+      <guid>http://bcoughlan.github.io/posts/kubernetes-master-fail/</guid>
+      <description>There is some consensus floating around that Kubernetes worker applications can continue to function when the master is down:
+Stack Overflow: What happens when the Kubernetes master fails (August 2016)
+ It&amp;rsquo;s my understanding that the master runs the API, and &amp;hellip; when it is offline &amp;hellip; life for applications will continue as normal unless nodes are rebooted, or there is a dramatic failure of some sort during this time, because TCP/ UDP services, load balancers, DNS, the dashboard, etc.</description>
+    </item>
+    
+  </channel>
+</rss>

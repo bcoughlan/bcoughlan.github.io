@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>bcoughlan&#39;s dev blog</title>
-    <link>https://bcoughlan.github.io/</link>
-    <description>Recent content on bcoughlan&#39;s dev blog</description>
+    <title>Drafts on bcoughlan&#39;s dev blog</title>
+    <link>https://bcoughlan.github.io/drafts/</link>
+    <description>Recent content in Drafts on bcoughlan&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 16 Aug 2020 21:37:08 +0100</lastBuildDate>
     
-	<atom:link href="https://bcoughlan.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bcoughlan.github.io/drafts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,17 +20,6 @@
       <description>An SSRF attack is where an attacker tricks a server into making a request to an arbitrary server. Potential uses:
  Port scanning and information gathering. Exposing sensitive info from unprotected services (yay microservices). Leaking data from internal metadata services in cloud providers. This can include AWS access keys.  Anywhere a URL or IP address originates from user-controlled input is a potential attack vector for SSRF.
 The vulnerable code Code samples</description>
-    </item>
-    
-    <item>
-      <title>Kubernetes workers are not immune to master failures</title>
-      <link>https://bcoughlan.github.io/posts/kubernetes-master-fail/</link>
-      <pubDate>Sat, 22 Feb 2020 01:51:37 +0000</pubDate>
-      
-      <guid>https://bcoughlan.github.io/posts/kubernetes-master-fail/</guid>
-      <description>There is some consensus floating around that Kubernetes worker applications can continue to function when the master is down:
-Stack Overflow: What happens when the Kubernetes master fails (August 2016)
- It&amp;rsquo;s my understanding that the master runs the API, and &amp;hellip; when it is offline &amp;hellip; life for applications will continue as normal unless nodes are rebooted, or there is a dramatic failure of some sort during this time, because TCP/ UDP services, load balancers, DNS, the dashboard, etc.</description>
     </item>
     
     <item>

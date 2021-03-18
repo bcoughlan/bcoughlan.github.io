@@ -8,18 +8,27 @@
   </url>
   
   <url>
-    <loc>https://bcoughlan.github.io/posts/guide-to-ssrf-attacks/</loc>
+    <loc>https://bcoughlan.github.io/drafts/</loc>
     <lastmod>2020-08-16T21:37:08+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bcoughlan.github.io/posts/</loc>
+    <loc>https://bcoughlan.github.io/drafts/guide-to-ssrf-attacks/</loc>
     <lastmod>2020-08-16T21:37:08+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://bcoughlan.github.io/posts/kubernetes-master-fail/</loc>
     <lastmod>2020-02-22T01:51:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bcoughlan.github.io/posts/</loc>
+    <lastmod>2020-02-22T01:51:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bcoughlan.github.io/drafts/beyond-unit-testing-with-testcontainers/</loc>
   </url>
   
   <url>

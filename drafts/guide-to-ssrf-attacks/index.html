@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Guide to SSRF attacks - bcoughlan&#39;s dev blog</title><link rel="preload" href="https://bcoughlan.github.io/font/Inter-Medium.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://bcoughlan.github.io/font/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="https://bcoughlan.github.io/font/Playfair.woff2" as="font" type="font/woff2" crossorigin>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Guide to SSRF attacks" />
+<meta property="og:description" content="An SSRF attack is where an attacker tricks a server into making a request to an arbitrary server. Potential uses:
+ Port scanning and information gathering. Exposing sensitive info from unprotected services (yay microservices). Leaking data from internal metadata services in cloud providers. This can include AWS access keys.  Anywhere a URL or IP address originates from user-controlled input is a potential attack vector for SSRF.
+The vulnerable code Code samples" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://bcoughlan.github.io/drafts/guide-to-ssrf-attacks/" />
+<meta property="article:published_time" content="2020-08-16T21:37:08+01:00" />
+<meta property="article:modified_time" content="2020-08-16T21:37:08+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Guide to SSRF attacks"/>
+<meta name="twitter:description" content="An SSRF attack is where an attacker tricks a server into making a request to an arbitrary server. Potential uses:
+ Port scanning and information gathering. Exposing sensitive info from unprotected services (yay microservices). Leaking data from internal metadata services in cloud providers. This can include AWS access keys.  Anywhere a URL or IP address originates from user-controlled input is a potential attack vector for SSRF.
+The vulnerable code Code samples"/>
+<link rel="stylesheet" type="text/css" media="screen" href="https://bcoughlan.github.io/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bcoughlan.github.io/css/main.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://bcoughlan.github.io/css/syntax.css" />
+</head>
+
+<body>
+	<div class="container wrapper">
+		<div class="header">
+	
+	<h1 class="site-title"><a href="https://bcoughlan.github.io/">bcoughlan&#39;s dev blog</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post">
+			<div class="post-header">
+				
+					<div class="meta">
+						<div class="date">
+							<span class="day">16</span>
+							<span class="rest">Aug 2020</span>
+						</div>
+					</div>
+				
+				<div class="matter">
+					<h1 class="title">Guide to SSRF attacks</h1>
+				</div>
+			</div>
+					
+			<div class="markdown">
+				<p>An SSRF attack is where an attacker tricks a server into making a request to an arbitrary server. Potential uses:</p>
+<ul>
+<li>Port scanning and information gathering.</li>
+<li>Exposing sensitive info from unprotected services (yay microservices).</li>
+<li>Leaking data from internal metadata services in cloud providers. This can include AWS access keys.</li>
+</ul>
+<p>Anywhere a URL or IP address originates from user-controlled input is a potential attack vector for SSRF.</p>
+<h1 id="the-vulnerable-code">The vulnerable code</h1>
+<p>Code samples</p>
+
+			</div>
+
+			<div class="tags">
+				
+					
+				
+			</div></div>
+	</div>
+	
+</body>
+</html>

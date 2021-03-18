@@ -33,14 +33,5 @@ Stack Overflow: What happens when the Kubernetes master fails (August 2016)
  It&amp;rsquo;s my understanding that the master runs the API, and &amp;hellip; when it is offline &amp;hellip; life for applications will continue as normal unless nodes are rebooted, or there is a dramatic failure of some sort during this time, because TCP/ UDP services, load balancers, DNS, the dashboard, etc.</description>
     </item>
     
-    <item>
-      <title></title>
-      <link>https://bcoughlan.github.io/drafts/beyond-unit-testing-with-testcontainers/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://bcoughlan.github.io/drafts/beyond-unit-testing-with-testcontainers/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

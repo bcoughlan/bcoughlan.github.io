@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on blog</title>
+    <title>Posts on bcoughlan&#39;s dev blog</title>
     <link>https://bcoughlan.github.io/posts/</link>
-    <description>Recent content in Posts on blog</description>
+    <description>Recent content in Posts on bcoughlan&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2020 01:51:37 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 16 Aug 2020 21:37:08 +0100</lastBuildDate>
     
 	<atom:link href="https://bcoughlan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Guide to SSRF attacks</title>
+      <link>https://bcoughlan.github.io/posts/guide-to-ssrf-attacks/</link>
+      <pubDate>Sun, 16 Aug 2020 21:37:08 +0100</pubDate>
+      
+      <guid>https://bcoughlan.github.io/posts/guide-to-ssrf-attacks/</guid>
+      <description>An SSRF attack is where an attacker tricks a server into making a request to an arbitrary server. Potential uses:
+ Port scanning and information gathering. Exposing sensitive info from unprotected services (yay microservices). Leaking data from internal metadata services in cloud providers. This can include AWS access keys.  Anywhere a URL or IP address originates from user-controlled input is a potential attack vector for SSRF.
+The vulnerable code Code samples</description>
+    </item>
     
     <item>
       <title>Kubernetes workers are not immune to master failures</title>

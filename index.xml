@@ -6,10 +6,19 @@
     <description>Recent content on bcoughlan&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 22 Feb 2020 01:51:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Mar 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://bcoughlan.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Don&#39;t mock the database</title>
+      <link>https://bcoughlan.github.io/posts/dont-mock-the-database/</link>
+      <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://bcoughlan.github.io/posts/dont-mock-the-database/</guid>
+      <description>Up until the 2010s the vast majority of applications were deployed on-premises to companies who employed dedicated DBAs and operations staff to manage their preferred database. Developers needed to write SQL that would work on Oracle, MySQL and SQL Server as well as being able to mock out the database with something like H2 to write tests and run locally, because it was not easy or cheap to run a database on your local machine.</description>
+    </item>
     
     <item>
       <title>Kubernetes workers are not immune to master failures</title>

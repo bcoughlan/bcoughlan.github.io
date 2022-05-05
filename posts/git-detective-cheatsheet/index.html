@@ -83,11 +83,13 @@ like <code>/</code> for search, <code>G</code> to go to the end. See the <a href
 <p>You can also add <code>--all</code> to search all branches which is useful for finding stray unmerged changes.</p>
 <h2 id="show-number-of-commits-by-each-author">Show number of commits by each author</h2>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git shortlog -sne -100 --no-merges</code></pre></div>
-<p><code>-s</code> Show summary stats.
-<code>-n</code> Sort by number of commits (descending).
-<code>-e</code> Show e-mail address of author.
-<code>-100</code> Last 100 commits only.
-<code>--no-merges</code> ignore merge commits.</p>
+<ul>
+<li><code>-s</code> Show summary stats.</li>
+<li><code>-n</code> Sort by number of commits (descending).</li>
+<li><code>-e</code> Show e-mail address of author.</li>
+<li><code>-100</code> Last 100 commits only.</li>
+<li><code>--no-merges</code> ignore merge commits.</li>
+</ul>
 <p>Sample output:</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">   <span class="m">279</span>  John Casner &lt;john.casner@gmail.com&gt;
    <span class="m">146</span>  Wendy Hill &lt;wendy.hill@acme.corp&gt;
@@ -96,7 +98,7 @@ like <code>/</code> for search, <code>G</code> to go to the end. See the <a href
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git log -i --author<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$author</span><span class="s2">&#34;</span></code></pre></div>
 <p><code>-i</code> makes it case insensitive.</p>
 <p>The author parameter is a regular expression so you can do partial matches, e.g. <code>--author=&quot;bc&quot;</code> will match author <code>bcoughlan</code>.</p>
-<p>You can also add the options in the example above, e.g. add <code>--stat</code> to show the modified filenames.</p>
+<p>You can also add other <code>git log</code> options, e.g. add <code>--stat</code> to show the modified filenames.</p>
 <h2 id="exclude-author-from-git-log">Exclude author from git log</h2>
 <p>This can be useful if your git log is full of commits from CI tools:</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git log --invert-grep --author<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$author</span><span class="s2">&#34;</span></code></pre></div>

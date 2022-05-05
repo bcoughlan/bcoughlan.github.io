@@ -65,9 +65,8 @@ like <code>/</code> for search, <code>G</code> to go to the end. See the <a href
 <p>For a lot of these commands it&rsquo;s nice to have a readable <code>git log</code> format. The alias I prefer is:</p>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>alias<span class="o">]</span>
   <span class="nv">l</span> <span class="o">=</span> log --graph --decorate --color --pretty<span class="o">=</span>format:<span class="s1">&#39;%h %Cred%an%Creset %Cgreen%cr%Creset %s %C(bold blue)%d%Creset&#39;</span></code></pre></div>
-<p>It looks like this:</p>
-<p><img src="/static/gitlog.png" alt="git log alias">
-<!-- raw HTML omitted --></p>
+<p>Which looks like this:</p>
+<p><img src="/images/gitlog.png" alt="git log alias"></p>
 <h2 id="show-history-of-changes-to-a-file">Show history of changes to a file</h2>
 <div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git log -p -- <span class="s1">&#39;**/hello.py&#39;</span></code></pre></div>
 <ul>

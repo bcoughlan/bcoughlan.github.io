@@ -11,7 +11,7 @@
 <meta property="og:description" content="Here is a little collection of Git tricks for tracking down changes in a codebase. These can help you find when and why a change was made, who to reach out to with a problem, and how to trace the change back to a PR and other discussions.
 General tip: using the pager Git uses less as a pager by default. less has a lot useful vim-like commands for navigating the output, like / for search, G to go to the end." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://bcoughlan.github.io/posts/git-detective-cheatsheet/" />
+<meta property="og:url" content="https://bcoughlan.github.io/posts/git-detective-cheatsheet/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2022-05-05T00:00:00+00:00" />
 <meta property="article:modified_time" content="2022-05-05T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
@@ -63,26 +63,26 @@ General tip: using the pager Git uses less as a pager by default. less has a lot
 like <code>/</code> for search, <code>G</code> to go to the end. See the <a href="https://man7.org/linux/man-pages/man1/less.1.html">man page</a> for the full list.</p>
 <h2 id="general-tip-browsing-git-logs">General tip: browsing git logs</h2>
 <p>For a lot of these commands it&rsquo;s nice to have a readable <code>git log</code> format. The alias I prefer is:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell"><span class="o">[</span>alias<span class="o">]</span>
-  <span class="nv">l</span> <span class="o">=</span> log --graph --decorate --color --pretty<span class="o">=</span>format:<span class="s1">&#39;%h %Cred%an%Creset %Cgreen%cr%Creset %s %C(bold blue)%d%Creset&#39;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="o">[</span>alias<span class="o">]</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">l</span> <span class="o">=</span> log --graph --decorate --color --pretty<span class="o">=</span>format:<span class="s1">&#39;%h %Cred%an%Creset %Cgreen%cr%Creset %s %C(bold blue)%d%Creset&#39;</span></span></span></code></pre></div>
 <p>Which looks like this:</p>
 <p><img src="/images/gitlog.png" alt="git log alias"></p>
 <h2 id="show-history-of-changes-to-a-file">Show history of changes to a file</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git log -p -- <span class="s1">&#39;**/hello.py&#39;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git log -p -- <span class="s1">&#39;**/hello.py&#39;</span></span></span></code></pre></div>
 <ul>
 <li><code>-p</code> Show changes (like git diff)</li>
 <li><code>--</code> Git treats everything after this as a file pattern</li>
 <li><code>**/</code> Search all subfolders</li>
 </ul>
 <h2 id="search-commit-messages">Search commit messages</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git log --grep <span class="s1">&#39;#123&#39;</span> </code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git log --grep <span class="s1">&#39;#123&#39;</span> </span></span></code></pre></div>
 <p>This shows all commits with <code>#123</code> in the commit messge.</p>
 <h2 id="search-commit-contents">Search commit contents</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git log -p -G <span class="s1">&#39;foo&#39;</span> </code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git log -p -G <span class="s1">&#39;foo&#39;</span> </span></span></code></pre></div>
 <p>This will show all changes where the diff contains <code>foo</code>. The value passed to <code>-G</code> is a regex.</p>
 <p>You can also add <code>--all</code> to search all branches which is useful for finding stray unmerged changes.</p>
 <h2 id="show-number-of-commits-by-each-author">Show number of commits by each author</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git shortlog -sne -100 --no-merges</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git shortlog -sne -100 --no-merges</span></span></code></pre></div>
 <ul>
 <li><code>-s</code> Show summary stats.</li>
 <li><code>-n</code> Sort by number of commits (descending).</li>
@@ -91,39 +91,39 @@ like <code>/</code> for search, <code>G</code> to go to the end. See the <a href
 <li><code>--no-merges</code> ignore merge commits.</li>
 </ul>
 <p>Sample output:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">   <span class="m">279</span>  John Casner &lt;john.casner@gmail.com&gt;
-   <span class="m">146</span>  Wendy Hill &lt;wendy.hill@acme.corp&gt;
-    <span class="m">76</span>  Hunter Monds &lt;hunter.monds@example.com&gt;</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">   <span class="m">279</span>  John Casner &lt;john.casner@gmail.com&gt;
+</span></span><span class="line"><span class="cl">   <span class="m">146</span>  Wendy Hill &lt;wendy.hill@acme.corp&gt;
+</span></span><span class="line"><span class="cl">    <span class="m">76</span>  Hunter Monds &lt;hunter.monds@example.com&gt;</span></span></code></pre></div>
 <h2 id="show-all-commits-by-author">Show all commits by $author</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git log -i --author<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$author</span><span class="s2">&#34;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git log -i --author<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$author</span><span class="s2">&#34;</span></span></span></code></pre></div>
 <p><code>-i</code> makes it case insensitive.</p>
 <p>The author parameter is a regular expression so you can do partial matches, e.g. <code>--author=&quot;bc&quot;</code> will match author <code>bcoughlan</code>.</p>
 <p>You can also add other <code>git log</code> options, e.g. add <code>--stat</code> to show the modified filenames.</p>
 <h2 id="exclude-author-from-git-log">Exclude author from git log</h2>
 <p>This can be useful if your git log is full of commits from CI tools:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git log --invert-grep --author<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$author</span><span class="s2">&#34;</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git log --invert-grep --author<span class="o">=</span><span class="s2">&#34;</span><span class="nv">$author</span><span class="s2">&#34;</span></span></span></code></pre></div>
 <h2 id="when-was-commit-merged-to-branch">When was $commit merged to $branch?</h2>
 <p>Merge commits can contain useful information such as pull request and bug tracker identifiers.</p>
 <p>Use <a href="https://github.com/mhagger/git-when-merged">git-when-merged</a> to find the merge commit from any commit.</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git when-merged -l <span class="nv">$commit</span> <span class="nv">$branch</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git when-merged -l <span class="nv">$commit</span> <span class="nv">$branch</span></span></span></code></pre></div>
 <p><code>-l</code> show merge commit SHA and message.</p>
 <h2 id="which-commits-are-on-branch1-that-are-not-on-branch2">Which commits are on $branch1 that are not on $branch2?</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git log --no-merges <span class="nv">$branch1</span> ^<span class="nv">$branch2</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git log --no-merges <span class="nv">$branch1</span> ^<span class="nv">$branch2</span></span></span></code></pre></div>
 <h2 id="which-branches-have-been-recently-modified">Which branches have been recently modified?</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git <span class="k">for</span>-each-ref --sort<span class="o">=</span><span class="s1">&#39;authordate:iso8601&#39;</span> --format<span class="o">=</span><span class="s1">&#39; %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)&#39;</span> refs/heads</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git <span class="k">for</span>-each-ref --sort<span class="o">=</span><span class="s1">&#39;authordate:iso8601&#39;</span> --format<span class="o">=</span><span class="s1">&#39; %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)&#39;</span> refs/heads</span></span></code></pre></div>
 <p>I like to alias this as <code>git wip</code>. Source from <a href="https://gist.github.com/carolynvs/c9357f45b6230cc8c3b302e83e3961a0">this gist by carolynvs</a>.</p>
 <h2 id="which-version-introduced-a-commit">Which version introduced a commit?</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git tag --contains <span class="nv">$commit</span></code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git tag --contains <span class="nv">$commit</span></span></span></code></pre></div>
 <p>You can then look for the earliest tag. You can also sort by date if you find it easier:</p>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git tag --contains <span class="nv">$commit</span> --format<span class="o">=</span><span class="s1">&#39;%(creatordate:short) %(refname:strip=2)&#39;</span> --sort -creatordate</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git tag --contains <span class="nv">$commit</span> --format<span class="o">=</span><span class="s1">&#39;%(creatordate:short) %(refname:strip=2)&#39;</span> --sort -creatordate</span></span></code></pre></div>
 <h2 id="who-last-modified-each-line-in-readmemd">Who last modified each line in README.md?</h2>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git blame README.md</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git blame README.md</span></span></code></pre></div>
 <h3 id="-starting-at-line-100">&hellip; starting at line 100</h3>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git blame -L100 README.md</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git blame -L100 README.md</span></span></code></pre></div>
 <h3 id="-only-show-lines-10-to-15">&hellip; only show lines 10 to 15</h3>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git blame -L10,15 README.md</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git blame -L10,15 README.md</span></span></code></pre></div>
 <h3 id="-only-show-commits-before-commit">&hellip; only show commits before $commit</h3>
-<div class="highlight"><pre class="chroma"><code class="language-shell" data-lang="shell">git blame <span class="nv">$commit</span>^ README.md</code></pre></div>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">git blame <span class="nv">$commit</span>^ README.md</span></span></code></pre></div>
 
 			</div>
 

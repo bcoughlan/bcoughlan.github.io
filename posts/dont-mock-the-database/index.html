@@ -10,7 +10,7 @@
 	<meta property="og:title" content="Don&#39;t mock the database" />
 <meta property="og:description" content="Up until the 2010s the vast majority of applications were deployed on-premises to companies who employed dedicated DBAs and operations staff to manage their preferred database. Developers needed to write SQL that would work on Oracle, MySQL and SQL Server as well as being able to mock out the database with something like H2 to write tests and run locally, because it was not easy or cheap to run a database on your local machine." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://bcoughlan.github.io/posts/dont-mock-the-database/" />
+<meta property="og:url" content="https://bcoughlan.github.io/posts/dont-mock-the-database/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2021-03-19T00:00:00+00:00" />
 <meta property="article:modified_time" content="2021-03-19T00:00:00+00:00" />
 <meta name="twitter:card" content="summary"/>
@@ -79,9 +79,9 @@ not an issue any more.</p>
 data and integrating that data with third-party sources. To draw the module boundary for testing at the data access object
 layer is to test a lobotomized application. Mocking at that juncture produces low-value tests: they are labour-intensive and
 don&rsquo;t give you the confidence to change code without breaking things.</p>
-<pre><code>                                                                    .───────. 
+<pre tabindex="0"><code>                                                                    .───────. 
                                                                    (         )
-                                                                   │`───────'│
+                                                                   │`───────&#39;│
                                                                    │         │
 ┌─────────────────┐                ┌───────────────┐               │         │
 │   Core logic    ├    MOCK HERE   │     Data      │               │         │
@@ -90,7 +90,7 @@ don&rsquo;t give you the confidence to change code without breaking things.</p>
 └─────────────────┘                └───────────────┘               │         │
                                                                    │.───────.│
                                                                    (         )
-                                                                    `───────' 
+                                                                    `───────&#39; 
 </code></pre><p>The old way is to unit test the core logic classes and mock out the data access classes (and by extension the database).
 In the new world it&rsquo;s easy to test with a real database. On a project I work on we use <a href="https://www.liquibase.org/">Liquibase</a>
 for database migrations, <a href="https://www.liquibase.org/">JDBI</a> for basic data access classes (written in Kotlin because data classes
@@ -101,8 +101,6 @@ the high effort and uncertainty that comes with mocking at this level.</p>
 <p>Give it a try on your next project and see how it compares.</p>
 <!-- raw HTML omitted -->
 <!-- raw HTML omitted -->
-<blockquote>
-</blockquote>
 
 			</div>
 

@@ -6,11 +6,7 @@
     <description>Recent content in Posts on bcoughlan&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://bcoughlan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 05 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bcoughlan.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git detective cheatsheet</title>
       <link>https://bcoughlan.github.io/posts/git-detective-cheatsheet/</link>
@@ -38,7 +34,7 @@ General tip: using the pager Git uses less as a pager by default. less has a lot
       <guid>https://bcoughlan.github.io/posts/kubernetes-master-fail/</guid>
       <description>There is some consensus floating around that Kubernetes worker applications can continue to function when the master is down:
 Stack Overflow: What happens when the Kubernetes master fails (August 2016)
- It&amp;rsquo;s my understanding that the master runs the API, and &amp;hellip; when it is offline &amp;hellip; life for applications will continue as normal unless nodes are rebooted, or there is a dramatic failure of some sort during this time, because TCP/ UDP services, load balancers, DNS, the dashboard, etc.</description>
+It&amp;rsquo;s my understanding that the master runs the API, and &amp;hellip; when it is offline &amp;hellip; life for applications will continue as normal unless nodes are rebooted, or there is a dramatic failure of some sort during this time, because TCP/ UDP services, load balancers, DNS, the dashboard, etc.</description>
     </item>
     
   </channel>

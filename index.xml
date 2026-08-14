@@ -1,50 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Barry Coughlan</title>
-    <link>https://bcoughlan.github.io/</link>
-    <description>Recent content on Barry Coughlan</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 14 Jul 2023 00:51:37 +0000</lastBuildDate><atom:link href="https://bcoughlan.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Modulithic Architecture</title>
-      <link>https://bcoughlan.github.io/posts/modulithic-architecture/</link>
-      <pubDate>Fri, 14 Jul 2023 00:51:37 +0000</pubDate>
-      
-      <guid>https://bcoughlan.github.io/posts/modulithic-architecture/</guid>
-      <description>The past decade saw everyone from startups to tech titans jump onto the microservices bandwagon, hoping to untangle themselves from their unmaintainable monoliths. The trend can be traced back to Jeff Bezos&amp;rsquo; API memo at Amazon, followed by a wave of innovation by Netflix engineering. As tech companies grew, centralized governance became impractical. They transitioned from viewing their organization as a system to an ecosystem, allowing for greater autonomy and concentrated decision-making within teams, and it paid off.</description>
-    </item>
-    
-    <item>
-      <title>Git detective cheatsheet</title>
-      <link>https://bcoughlan.github.io/posts/git-detective-cheatsheet/</link>
-      <pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://bcoughlan.github.io/posts/git-detective-cheatsheet/</guid>
-      <description>Here is a little collection of Git tricks for tracking down changes in a codebase. These can help you find when and why a change was made, who to reach out to with a problem, and how to trace the change back to a PR and other discussions.
-General tip: using the pager Git uses less as a pager by default. less has a lot useful vim-like commands for navigating the output, like / for search, G to go to the end.</description>
-    </item>
-    
-    <item>
-      <title>Don&#39;t mock the database</title>
-      <link>https://bcoughlan.github.io/posts/dont-mock-the-database/</link>
-      <pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://bcoughlan.github.io/posts/dont-mock-the-database/</guid>
-      <description>Up until the 2010s the vast majority of applications were deployed on-premises to companies who employed dedicated DBAs and operations staff to manage their preferred database. Developers needed to write SQL that would work on Oracle, MySQL and SQL Server as well as being able to mock out the database with something like H2 to write tests and run locally, because it was not easy or cheap to run a database on your local machine.</description>
-    </item>
-    
-    <item>
-      <title>Kubernetes workers are not immune to master failures</title>
-      <link>https://bcoughlan.github.io/posts/kubernetes-master-fail/</link>
-      <pubDate>Sat, 22 Feb 2020 01:51:37 +0000</pubDate>
-      
-      <guid>https://bcoughlan.github.io/posts/kubernetes-master-fail/</guid>
-      <description>There is some consensus floating around that Kubernetes worker applications can continue to function when the master is down:
-Stack Overflow: What happens when the Kubernetes master fails (August 2016)
-It&amp;rsquo;s my understanding that the master runs the API, and &amp;hellip; when it is offline &amp;hellip; life for applications will continue as normal unless nodes are rebooted, or there is a dramatic failure of some sort during this time, because TCP/ UDP services, load balancers, DNS, the dashboard, etc.</description>
-    </item>
-    
-  </channel>
+	<channel>
+		<title>Barry Coughlan</title>
+		<link>https://bcoughlan.github.io/</link>
+		<description>Recent content on Barry Coughlan</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Fri, 14 Jul 2023 00:51:37 +0000</lastBuildDate>
+		
+			<atom:link href="https://bcoughlan.github.io/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Modulithic Architecture</title>
+				<link>https://bcoughlan.github.io/posts/modulithic-architecture/</link>
+				<pubDate>Fri, 14 Jul 2023 00:51:37 +0000</pubDate>
+				<guid>https://bcoughlan.github.io/posts/modulithic-architecture/</guid>
+				<description>&lt;p&gt;The past decade saw everyone from startups to tech titans jump onto the microservices bandwagon, hoping to untangle themselves from their unmaintainable monoliths. The trend can be traced back to &lt;a href=&#34;https://nordicapis.com/the-bezos-api-mandate-amazons-manifesto-for-externalization/&#34;&gt;Jeff Bezos&amp;rsquo; API memo at Amazon&lt;/a&gt;, followed by a wave of innovation by Netflix engineering. As tech companies grew, centralized governance became impractical. They transitioned from viewing their organization as a system to an ecosystem, allowing for greater autonomy and concentrated decision-making within teams, and it paid off.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Git detective cheatsheet</title>
+				<link>https://bcoughlan.github.io/posts/git-detective-cheatsheet/</link>
+				<pubDate>Thu, 05 May 2022 00:00:00 +0000</pubDate>
+				<guid>https://bcoughlan.github.io/posts/git-detective-cheatsheet/</guid>
+				<description>&lt;p&gt;Here is a little collection of Git tricks for tracking down changes in a codebase. These can help you find when and why a change was made, who to reach out to with a problem, and how to trace the change back to a PR and other discussions.&lt;/p&gt;&#xA;&lt;h2 id=&#34;general-tip-using-the-pager&#34;&gt;General tip: using the pager&lt;/h2&gt;&#xA;&lt;p&gt;Git uses &lt;code&gt;less&lt;/code&gt; as a pager by default. &lt;code&gt;less&lt;/code&gt; has a lot useful vim-like commands for navigating the output,&#xA;like &lt;code&gt;/&lt;/code&gt; for search, &lt;code&gt;G&lt;/code&gt; to go to the end. See the &lt;a href=&#34;https://man7.org/linux/man-pages/man1/less.1.html&#34;&gt;man page&lt;/a&gt; for the full list.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Don&#39;t mock the database</title>
+				<link>https://bcoughlan.github.io/posts/dont-mock-the-database/</link>
+				<pubDate>Fri, 19 Mar 2021 00:00:00 +0000</pubDate>
+				<guid>https://bcoughlan.github.io/posts/dont-mock-the-database/</guid>
+				<description>&lt;p&gt;Up until the 2010s the vast majority of applications were deployed on-premises to companies&#xA;who employed dedicated DBAs and operations staff to manage their preferred database. Developers&#xA;needed to write SQL that would work on Oracle, MySQL and SQL Server as well as being able to&#xA;mock out the database with something like H2 to write tests and run locally, because it was not easy&#xA;or cheap to run a database on your local machine. This led to the proliferation of ORMs like Hibernate&#xA;to solve for this problem. ORMs offered a bespoke language which translated into the SQL dialect of&#xA;many databases, as well as tools to map result sets to Java objects.&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>Kubernetes workers are not immune to master failures</title>
+				<link>https://bcoughlan.github.io/posts/kubernetes-master-fail/</link>
+				<pubDate>Sat, 22 Feb 2020 01:51:37 +0000</pubDate>
+				<guid>https://bcoughlan.github.io/posts/kubernetes-master-fail/</guid>
+				<description>&lt;p&gt;There is some consensus floating around that Kubernetes worker applications can continue to function when the master is down:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://stackoverflow.com/questions/39172131/what-happens-when-the-kubernetes-master-fails/39173007#39173007&#34;&gt;Stack Overflow: What happens when the Kubernetes master fails&lt;/a&gt; (August 2016)&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;It&amp;rsquo;s my understanding that the master runs the API, and &amp;hellip; when it is offline &amp;hellip; life for applications will continue as normal unless nodes are rebooted, or there is a dramatic failure of some sort during this time, because TCP/ UDP services, load balancers, DNS, the dashboard, etc. Should all continue to function.&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

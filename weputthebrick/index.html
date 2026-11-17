@@ -41,7 +41,6 @@
     button:hover:not(:disabled), a.btn:hover { transform: translateY(-2px) rotate(-1deg); }
     button:active:not(:disabled), a.btn:active { transform: translateY(4px); box-shadow: 0 1px 0 #3b2200; }
     button:disabled { opacity: .5; cursor: wait; }
-    #msg { min-height: 1.5rem; margin: .8rem 0 0; color: #ffb3a7; }
     #save { display: inline-block; margin-top: .6rem; background: #fffbea; }
     #save[hidden] { display: none; }
   </style>
@@ -52,10 +51,9 @@
     <p>Write your own message on Father Ted's chalkboard.</p>
     <canvas id="board" width="500" height="382"></canvas>
     <form onsubmit="return false">
-      <input id="text" type="text" maxlength="120" autocomplete="off" aria-label="Chalkboard text" />
-      <button id="go" type="button">Generate!</button>
+      <input id="text" type="text" placeholder="your text here" maxlength="120" autocomplete="off" aria-label="Chalkboard text" />
+      <button id="go" disabled>Generate!</button>
     </form>
-    <p id="msg" role="status"></p>
     <a id="save" class="btn" href="#" download="meme.png" hidden>Download PNG</a>
   </main>
 </body>
